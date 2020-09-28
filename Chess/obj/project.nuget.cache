@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hxFx/edlZqjDZS2+N/art6dFuD2v8/Xxa3r1FpHYdMh1yqi+ub7lDelphzsb2zYcKl/pZV9pGo1aqLFzwy9wog==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Frodo\\source\\repos\\Chess\\Chess\\Chess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Frodo\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Frodo\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\Frodo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

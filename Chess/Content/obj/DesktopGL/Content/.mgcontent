@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/atlas.json</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/atlas0.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/bishop_A.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/bishop_B.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/chessboard.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/horse_A.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/horse_B.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/king_A.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/king_B.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/pawn_A.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/pawn_B.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/queen_A.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/queen_B.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/tower_A.png</File>
+    <File>C:/Users/Frodo/source/repos/Chess/Chess/Content/tower_B.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

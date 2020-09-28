@@ -1,0 +1,16 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/atlas.json","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/atlas.xnb","CrunchedJsonProcessor","Atlas",1376,1209,0,2044493
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/atlas0.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/atlas0.xnb","TextureProcessor","Texture2DContent",8689,262229,0,0393478
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/bishop_A.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/bishop_A.xnb","TextureProcessor","Texture2DContent",2209,40085,0,0104495
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/bishop_B.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/bishop_B.xnb","TextureProcessor","Texture2DContent",2267,40085,0,0089055
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/chessboard.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/chessboard.xnb","TextureProcessor","Texture2DContent",4765,589909,0,0217647
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/horse_A.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/horse_A.xnb","TextureProcessor","Texture2DContent",2798,40085,0,0089468
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/horse_B.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/horse_B.xnb","TextureProcessor","Texture2DContent",2730,40085,0,0086686
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/king_A.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/king_A.xnb","TextureProcessor","Texture2DContent",2246,40085,0,008722
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/king_B.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/king_B.xnb","TextureProcessor","Texture2DContent",2227,40085,0,0086376
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/pawn_A.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/pawn_A.xnb","TextureProcessor","Texture2DContent",1674,40085,0,0083868
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/pawn_B.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/pawn_B.xnb","TextureProcessor","Texture2DContent",1688,40085,0,0085372
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/queen_A.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/queen_A.xnb","TextureProcessor","Texture2DContent",2273,40085,0,0101156
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/queen_B.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/queen_B.xnb","TextureProcessor","Texture2DContent",2294,40085,0,0098497
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/tower_A.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/tower_A.xnb","TextureProcessor","Texture2DContent",2220,40085,0,0110115
+"C:/Users/Frodo/source/repos/Chess/Chess/Content/tower_B.png","C:/Users/Frodo/source/repos/Chess/Chess/Content/bin/DesktopGL/tower_B.xnb","TextureProcessor","Texture2DContent",2221,40085,0,0086466

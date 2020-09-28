@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Models="MyXMLData.Models">
+  <Asset Type="Models:Atlas">
+    <tex>
+      <img>
+        <n>nomeee</n>
+        <x>1</x>
+        <y>2</y>
+        <w>3</w>
+        <h>4</h>
+        <fx>5</fx>
+        <fy>6</fy>
+        <fw>7</fw>
+        <fh>8</fh>
+      </img>
+    </tex>
+    <n>atlasname</n>
+  </Asset>
+</XnaContent>

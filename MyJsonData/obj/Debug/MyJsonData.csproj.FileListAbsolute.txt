@@ -1,0 +1,12 @@
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\MyJsonData.dll
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\MyJsonData.pdb
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\MonoGame.Framework.Content.Pipeline.dll
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\MonoGame.Framework.dll
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\MonoGame.Framework.xml
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\MonoGame.Framework.Content.Pipeline.xml
+C:\Users\Frodo\source\repos\Chess\MyJsonData\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Frodo\source\repos\Chess\MyJsonData\obj\Debug\MyJsonData.csproj.CoreCompileInputs.cache
+C:\Users\Frodo\source\repos\Chess\MyJsonData\obj\Debug\MyJsonData.csproj.CopyComplete
+C:\Users\Frodo\source\repos\Chess\MyJsonData\obj\Debug\MyJsonData.dll
+C:\Users\Frodo\source\repos\Chess\MyJsonData\obj\Debug\MyJsonData.pdb
