@@ -89,7 +89,7 @@ namespace Chess
             base.Draw(gameTime);
         }
 
-        public Vector2 toIsometric(Vector2 pos)
+        public static Vector2 toIsometric(Vector2 pos)
         {
             float x, y;
 

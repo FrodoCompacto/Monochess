@@ -388,7 +388,7 @@ namespace Chess.Entities.ChessEntities
             Tab.Draw(spriteBatch, gameTime);
         }
 
-        public void CheckCollisions(MouseState mouseState)
+        public void PegarPeca(MouseState mouseState)
         {
             foreach (Peca p in Tab.Pecas)
             {
@@ -397,6 +397,12 @@ namespace Chess.Entities.ChessEntities
                     if (p.CollisionBox.Contains(mouseState.Position))
                     {
                         Tab.PosicoesPossiveis = p.MovimentosPossiveis();
+                        Tab.PecaSelecionada = p;
+
+                        float auxX = p.CollisionBox.X - mouseState.X;
+                        float auxY = p.CollisionBox.Y - mouseState.Y;
+                        //Tab.mousePos = new Vector2(mouseState.X + p.CollisionBox.Width, mouseState.Y + p.CollisionBox.Height);
+                        Tab.mousePos = new Vector2(mouseState.X - auxX, mouseState.Y - auxY);
                     }
                 }
             }

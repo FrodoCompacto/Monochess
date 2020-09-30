@@ -19,7 +19,10 @@ namespace Chess.Input
         {
             _mouseState = Mouse.GetState();
 
-            _partida.CheckCollisions(_mouseState);
+            if (_mouseState.LeftButton == ButtonState.Pressed)
+            {
+                _partida.PegarPeca(_mouseState);
+            }
         }
     }
 }

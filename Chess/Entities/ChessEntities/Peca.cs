@@ -87,12 +87,23 @@ namespace Chess.Entities.ChessEntities
 
         public void Update(GameTime gameTime)
         {
-            this.CollisionBox = new Rectangle((int)Pos.X - (int)AnchorPoint.X, (int)Pos.Y - (int)AnchorPoint.Y, spriteInfo.W/2, spriteInfo.H/2);
+            this.CollisionBox = new Rectangle((int)Pos.X - (int)AnchorPoint.X/2, (int)Pos.Y - (int)AnchorPoint.Y/2, spriteInfo.W/2, spriteInfo.H/2);
         }
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             _sprite.Draw(spriteBatch, Pos - AnchorPoint * _scaleRatio);
+
+            
+        }
+
+        private void DrawHitboxes(SpriteBatch spriteBatch)
+        {
+           Texture2D boxTexture = new Texture2D(spriteBatch.GraphicsDevice, 1, 1);
+
+            boxTexture.SetData(new[] { Color.White });
+
+            spriteBatch.Draw(boxTexture, CollisionBox, Color.White);
         }
     }
 }

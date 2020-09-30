@@ -27,6 +27,9 @@ namespace Chess.Entities.ChessEntities
         public Vector2 AnchorPoint = new Vector2();
 
         public bool[,] PosicoesPossiveis { get; set; }
+        public Peca PecaSelecionada { get; set; }
+        public Vector2 mousePos { get; set; } = new Vector2(0,0);
+
 
         public Tabuleiro(int linhas, int colunas, Texture2D spriteSheet, Atlas atlas, Vector2 boardPos, float textureScaleRatio, int drawOrder)
         {
@@ -110,6 +113,7 @@ namespace Chess.Entities.ChessEntities
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             Vector2 Pos = BoardPos;
+            Sprite auxSprite;
 
             Vector2 auxPos = new Vector2(-16 * _textureScaleRatio, 8 * _textureScaleRatio);
             Vector2 auxPos2 = new Vector2(16 * _textureScaleRatio, 8 * _textureScaleRatio);
@@ -120,25 +124,20 @@ namespace Chess.Entities.ChessEntities
                 
                 for (int i = 0; i < Colunas; i++)
                 {
-                    if (aux)
+                    if (aux) auxSprite = _spriteB;
+                    else auxSprite = _spriteA;
+
+                    auxSprite.TintColor = PosicoesPossiveis[j, i] ? Color.CornflowerBlue : Color.White;
+
+                    auxSprite.Draw(spriteBatch, Pos - AnchorPoint * _textureScaleRatio);
+                    if (Pecas[j, i] != null)
                     {
-                        _spriteB.TintColor = PosicoesPossiveis[j, i] ? Color.CornflowerBlue : Color.White;
-                        _spriteB.Draw(spriteBatch, Pos - AnchorPoint * _textureScaleRatio);
-                        if (Pecas[j, i] != null)
+                        if (PecaSelecionada == Pecas[j,i])
                         {
-                            Pecas[j, i].Pos = Pos;
-                            Pecas[j, i].Draw(spriteBatch, gameTime);
-                        }
-                    }
-                    else
-                    {
-                        _spriteA.TintColor = PosicoesPossiveis[j, i] ? Color.CornflowerBlue : Color.White;
-                        _spriteA.Draw(spriteBatch, Pos - AnchorPoint * _textureScaleRatio);
-                        if (Pecas[j, i] != null)
-                        {
-                            Pecas[j, i].Pos = Pos;
-                            Pecas[j, i].Draw(spriteBatch, gameTime);
-                        }
+                            Pecas[j, i].Pos = mousePos;
+                        } else Pecas[j, i].Pos = Pos;
+
+                        Pecas[j, i].Draw(spriteBatch, gameTime);
                     }
 
                     Pos += auxPos;
