@@ -23,6 +23,10 @@ namespace Chess.Input
             {
                 _partida.PegarPeca(_mouseState);
             }
+            else if (_mouseState.LeftButton == ButtonState.Released)
+            {
+                _partida.SoltarPeca();
+            }
         }
     }
 }

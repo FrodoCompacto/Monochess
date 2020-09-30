@@ -28,10 +28,10 @@ namespace Chess.Entities.ChessEntities
         private Texture2D _spriteSheet;
 
         private Atlas _atlas;
-
         public float PieceScaleRatio { get; set; }
-
         public float BoardScaleRatio { get; set; }
+        public GameState gameState { get; set; } = GameState.IDLE;
+        public MouseState mouseState { get; set; }
 
         public PartidaDeXadrez(Texture2D spriteSheet, Atlas atlas, Vector2 boardPos, float boardScaleRatio,  float pieceScaleRatio,int drawOrder)
         {
@@ -381,6 +381,15 @@ namespace Chess.Entities.ChessEntities
         public void Update(GameTime gameTime)
         {
             Tab.Update(gameTime);
+
+            if (gameState == GameState.PIECE_SELECTED)
+            {
+                this.mouseState = Mouse.GetState();
+                float auxX = Tab.PecaSelecionada.CollisionBox.X - mouseState.X;
+                float auxY = Tab.PecaSelecionada.CollisionBox.Y - mouseState.Y;
+                //Tab.mousePos = new Vector2(mouseState.X + p.CollisionBox.Width, mouseState.Y + p.CollisionBox.Height);
+                Tab.mousePos = new Vector2(mouseState.X - auxX, mouseState.Y - auxY);
+            }
         }
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)
@@ -396,16 +405,18 @@ namespace Chess.Entities.ChessEntities
                 {
                     if (p.CollisionBox.Contains(mouseState.Position))
                     {
+                        gameState = GameState.PIECE_SELECTED;
+
                         Tab.PosicoesPossiveis = p.MovimentosPossiveis();
                         Tab.PecaSelecionada = p;
-
-                        float auxX = p.CollisionBox.X - mouseState.X;
-                        float auxY = p.CollisionBox.Y - mouseState.Y;
-                        //Tab.mousePos = new Vector2(mouseState.X + p.CollisionBox.Width, mouseState.Y + p.CollisionBox.Height);
-                        Tab.mousePos = new Vector2(mouseState.X - auxX, mouseState.Y - auxY);
                     }
                 }
             }
+        }
+
+        internal void SoltarPeca()
+        {
+            gameState = GameState.IDLE;
         }
     }
 }
